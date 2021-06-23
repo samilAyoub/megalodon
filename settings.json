@@ -1,0 +1,12 @@
+{
+	"leverage": "10",
+	"trading_periods": "1m,5m,15m",
+	"margin_type": "ISOLATED",
+	"trailing_percentage": "1.0",
+	"api_url": "https://fapi.binance.com/",
+	"market": {
+		"adx_threshold": 30,
+		"volume_threshold": 100000000.00,
+		"market_time_out_minutes": 60
+	}
+}
