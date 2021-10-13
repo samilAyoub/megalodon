@@ -1,20 +1,21 @@
-# binance-future-bot
-A bot that can trade futures contracts on binance.
+**What is this?**
 
-
-**USE THE SOFTWARE AT YOUR OWN RISK. I'M NOT RESPONSIBILE FOR THE TRADING RESULTS. DON'T RISK MONEY YOU CAN'T LOSE.**
-
-Always start by running your account in test trading mode and don't commit money before you understand how it works and what profit/loss you should expect.
-
-We strongly recommend that you have some knowledge of coding and Python. Do not hesitate to read the source code and understand the mechanism of this bot.
+A bot that can trade futures contracts on Binance.
 
 **How it works?**
 
-This project inspired by [this repos](https://github.com/Hephyrius/binance_futures_bot).
+1- analyze the Binance exchange to catch trending markets, by calculating a metric called [ADX](https://www.investopedia.com/articles/trading/07/adx-trend-indicator.asp)
 
-This bot use a startigy called [Talon Sniper](https://www.tradingview.com/script/Kt8v4HcD-Talon-Sniper-v1/).
+2- if a trending market is caught, then the bot immediately start listening for buy/sell triggers, by using a strategy called [Talon Sniper](https://www.tradingview.com/script/Kt8v4HcD-Talon-Sniper-v1/)
 
-This staregy shows a good performance in non trending market and a good performance in trending market, therfore, the bot verfiy the trend of the market befor opening any position by using [ADX](https://www.investopedia.com/articles/trading/07/adx-trend-indicator.asp) indicator.
+3- if a buy/sell position opened, then the bot starts tracking and listing for an opposite signal to close the position.
 
-I still modify the README.md when i have time.
+N.B: If you wondered why we check if the market trending before going further, because the Talon Sniper strategy is known for its weakness when it is applied to non-trending markets and very good performance in the trending ones.
+
+
+**USE THE SOFTWARE AT YOUR OWN RISK. I'M NOT RESPONSIBLE FOR THE TRADING RESULTS. DON'T RISK MONEY YOU CAN'T LOSE.**
+
+Always start by running your account in test trading mode, and don't commit money before you understand how it works and what profit/loss you should expect.
+
+We strongly recommend that you have some knowledge of coding and Python. Do not hesitate to read the source code and understand the mechanism of this bot.
 
