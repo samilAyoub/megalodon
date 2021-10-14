@@ -10,7 +10,7 @@ We can split how the bot works into three main steps:
 
 2- If a trending market is caught, then the bot immediately start listening for buy/sell triggers, by using a strategy called [Talon Sniper](https://www.tradingview.com/script/Kt8v4HcD-Talon-Sniper-v1/)
 
-3- If a buy/sell position opened, then the bot starts tracking it and listing for an opposite signal to close it.
+3- If a buy/sell position opened, then the bot starts tracking it and listening for an opposite signal to close it.
 
 N.B: If you wonder why we check if the market trending before going further, because the Talon Sniper strategy is known for its weakness when it is applied to non-trending markets.
 
