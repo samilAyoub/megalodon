@@ -1,6 +1,6 @@
 **What is this?**
 
-A bot that can trade futures contracts on Binance.
+A bot to trade futures contracts on Binance.
 
 **How it works?**
 
